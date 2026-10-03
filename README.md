@@ -1,1 +1,1 @@
-# Fashion MNIST ANN PIPELINE
+# Fashion-MNIST ANN Pipeline
