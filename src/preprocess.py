@@ -10,7 +10,8 @@ OUT_DIR = "data/processed"
 
 
 def normalize(x):
-    return x.astype("float32") / 255.0
+    """Standardize pixels using Fashion-MNIST mean and std."""
+    return (x.astype("float32") / 255.0 - 0.2860) / 0.3530
 
 
 def main():
