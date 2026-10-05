@@ -8,9 +8,9 @@ from sklearn.model_selection import train_test_split
 RAW_DIR = "data/raw"
 OUT_DIR = "data/processed"
 
-
 def normalize(x):
-    return x.astype("float32") / 255.0
+    """Scale pixels to [-1, 1]."""
+    return x.astype("float32") / 127.5 - 1.0
 
 
 def main():
