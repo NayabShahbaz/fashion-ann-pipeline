@@ -1,6 +1,7 @@
 preprocess:
   val_size: 0.1 # fraction of the training set held out for validation
   seed: 42
+  normalization: standard # minmax, symmetric, or standard
 
 train:
   dense_units: 256
